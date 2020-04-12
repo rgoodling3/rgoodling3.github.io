@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## Final ML Project: Emoji Classification
+Riley Goodling - rgoodling3@gatech.edu
+YOUR NAMES HERE
 
-You can use the [editor on GitHub](https://github.com/rgoodling3/rgoodling3.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Emojis have become an increasingly important feature in communication within the last decade. As the demand for emojis has increased, developers have created emojis for seemingly all images. Therefore, it can be difficult for users to find the emoji they are looking for. Our application aims to create a solution that will allow users to find their emoji by drawing a sketch of their desired emoji. This solution could also be applied to various text editor applications in which users’ sketches could be easily transformed into emojis that have already been designed.
 
-### Markdown
+### Data
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Our data is coming from a doodle dataset that was provided by Google. The data set can be found here: https://quickdraw.withgoogle.com/data. 
 
-```markdown
-Syntax highlighted code block
+### Approach
 
-# Header 1
-## Header 2
-### Header 3
+To perform this image classification task efficiently, we plan to retrain an existing neural network architecture. Our approach is based on Convolutional Neural Network architecture (ConvNet) with ReLU activation function. It consists of five basic types of layers: convolution layer, ReLU layer, pooling layer, flattening layer, and fully connected layer. It is a widely applied architecture in the field of image recognition, offering high accuracy under reasonable training time. In particular, its ability to detect edge arrangements is ideal for simple hand-drawn figures in our project. Also, the trained neural network provides fast image classification speed, which is ideal for situations such as note-taking and texting. To achieve this, we retrain a Deep Residual Network (ResNet) based on the ImageNet dataset, a variant of ConvNet that weights residuals with manifolds of the dataset to improve image classification as demonstrated on ImageNet. We plan on not only training the net on the ImageNet-Sketch dataset, but also a mix of thousands of 2D vector images from Bing’s Image Search API incorporated into each of the classes. Thus, we hope to observe the training and inference of ResNet on a dataset of 2D vector images.
 
-- Bulleted
-- List
+### Results
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rgoodling3/rgoodling3.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Conclusion
