@@ -1,6 +1,11 @@
 ## Final ML Project: Emoji Classification
 Riley Goodling - rgoodling3@gatech.edu
-YOUR NAMES HERE
+
+Haris Hussain - 
+
+Yu Xin - 
+
+Grace Armfield - 
 
 ### Introduction
 
@@ -8,7 +13,7 @@ Emojis have become an increasingly important feature in communication within the
 
 ### Data
 
-Our data is coming from a doodle dataset that was provided by Google. The data set can be found here: https://quickdraw.withgoogle.com/data. 
+Our data is coming from a doodle dataset that was provided by Google. The data set can be found here: https://quickdraw.withgoogle.com/data. Using the labeled images, we searched for images that alligned with existing emojis. We then had a list of 95 emojis that could be matched with doodles from the dataset. Google's doodle dataset had more than 100,000 doodles for most of the images, so this provided us with more than enough data to train and test on. 
 
 ### Approach
 
