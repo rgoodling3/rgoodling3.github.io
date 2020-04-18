@@ -27,21 +27,36 @@ And an example of an image's page looks like this:
 
 ![Example of Page on Google Doodle](img/googleDoodlePlane.png)
 
-Google released their data set to the public on GitHub (https://github.com/googlecreativelab/quickdraw-dataset) for access and use.
+Google released their data set to the public on GitHub (https://github.com/googlecreativelab/quickdraw-dataset) for access and use. 
 
 
 ### Approach
 
-To perform this image classification task efficiently, we plan to retrain an existing neural network architecture. Our approach is based on Convolutional Neural Network architecture (ConvNet) with ReLU activation function. It consists of five basic types of layers: convolution layer, ReLU layer, pooling layer, flattening layer, and fully connected layer. It is a widely applied architecture in the field of image recognition, offering high accuracy under reasonable training time. In particular, its ability to detect edge arrangements is ideal for simple hand-drawn figures in our project. Also, the trained neural network provides fast image classification speed, which is ideal for situations such as note-taking and texting. To achieve this, we retrain a Deep Residual Network (ResNet) based on the Google Doodle dataset, a variant of ConvNet that weights residuals with manifolds of the dataset to improve image classification as demonstrated on Google Doodle.  Thus, we hope to observe the training and inference of ResNet on a dataset of 2D vector images.
+To perform this image classification task efficiently, we plan to retrain an existing neural network architecture. Our approach is based on Convolutional Neural Network architecture (ConvNet) with ReLU activation function. It consists of five basic types of layers: convolution layer, ReLU layer, pooling layer, flattening layer, and fully connected layer. It is a widely applied architecture in the field of image recognition, offering high accuracy under reasonable training time. In particular, its ability to detect edge arrangements is ideal for simple hand-drawn figures in our project. Also, the trained neural network provides fast image classification speed, which is ideal for situations such as note-taking and texting. To achieve this, we retrain a ConvNet based on the Google Doodle dataset.  Thus, we hope to observe the training and inference of ConvNet on a dataset of 2D vector images.
+
+Each image is 28x28 pixels, meaning we have 784 pixels per picture. We use the convulusion layer to reduce the data of each picture, pulling the 784 pixels down to around 50 data points. The convulusion layer will extract the important features from each image. Then the neural net layer will take the downsampled data and make a neural netowrk out of it. 
+
+Here, we show a snippet of our code that was used to create this ConvNet. This method is the most important method that shapes the neural net and shows all the steps that were taken to accomplish our goal.
+
+![CodeSnippet](img/CodeSnippet.png)
 
 ### Results
 
-Below, we have an image that shows our model's accuracy and loss.
+Below, we have an image that shows our model's accuracy and loss. We wanted our accuracy to increase with each epoch, and our loss to decrease. As seen by the graph, this was achieved in the exact way that we hoped. 
+
 ![Accuracy and Loss](img/AccuracyandLoss.png)
 
-![Confusion Matrix](img/ConfusionMatrix.png)
+The image shown below is a breakdown of the precision and recall of our CNN. Again, we achieved our goal of having both the precision and recall scores being as close to one as possible, resulting in a very high F1-score. This proves again that our CNN was successful at recognizing the objects so that we can class them with emoji labels.
 
 ![Precision Recall](img/PrecisionRecall.png)
 
+The confusion matrix lines up very well with the other two images, showing that our CNN very accurately identified each image. Some of the values may seem a little off from 1, such as the bat only reaching an accuracy of 87%, but this is most likely linked to the fact that the data comes from human data inputs. Some of the images that are in the dataset are even difficult for humans to differentiate, as is depicted in the image of a 'bat' (as in the animal) below the confusion matrix. 
+
+![Confusion Matrix](img/ConfusionMatrix.png)
+
+![Ugly Bat](img\badbatimage.png)
+
 
 ### Conclusion
+
+As seen in our results section, our CNN has done a great job in identifying doodles from the Google Doodle dataset. This makes us hopeful that the algorithm will work with most humans, as the Google Doodle dataset is a collection of human made data. In the future, we all think this would be a great program to implement for many every day uses. With our model working very well and the emoji dictionary growing seemingly everyday, we could solve a small problem to make lives easier.
