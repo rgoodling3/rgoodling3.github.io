@@ -68,7 +68,7 @@ Comparing this to the K-Means results, we see some interesting trends.
 |:---:|:---:|:---:|
 |10 Clusters| 144 Clusters| 784 Clusters|
 
-As shown in the three confusion matrices above, K-Means gives lower accuracy depending on the number of clusters. In the matrix that shows the results of the 10 clusters, we see a very low accuracy of 45%. As we increase the clusters to 144 and then too 784, the accuracy climbs from 45% to 68% to 77%. The K-Means does not get that close to the CNN's accuracy of 95%. On the other hand, K-Means takes  much less time to traing. Training the 10 cluster set took less than a minute to run. The CNN's time was much larger than that, but produced much more accurate results. 
+As shown in the three confusion matrices above, K-Means gives lower accuracy depending on the number of clusters. In the matrix that shows the results of the 10 clusters, we see a very low accuracy of 45%. As we increase the clusters to 144 and then too 784, the accuracy climbs from 45% to 68% to 77%. The K-Means does not get that close to the CNN's accuracy of 95%. On the other hand, K-Means takes  much less time to traing. Training the 10 cluster set took seconds and training the 784 cluster took less than two minute to run. The CNN's time was much larger than that, but produced much more accurate results. 
 
 
 ### Conclusion
