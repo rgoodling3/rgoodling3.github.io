@@ -79,5 +79,6 @@ As seen in our results section, our CNN has done a great job in identifying dood
 ### Refrences
 
 [1]Bonner, Anne. “The Complete Beginner's Guide to Deep Learning: Convolutional Neural Networks.” Towards Data Science. Medium, February 2, 2019. https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb.
+
 [2]LeCun, Y., Bengio, Y. & Hinton, G. Deep learning. Nature 521, 436–444 (2015). https://doi.org/10.1038/nature14539
 
