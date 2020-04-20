@@ -32,13 +32,18 @@ Google released their data set to the public on GitHub (https://github.com/googl
 
 ### Approach
 
+## Supervised Learing
 To perform this image classification task efficiently, we plan to retrain an existing neural network architecture. Our approach is based on Convolutional Neural Network architecture (ConvNet) with ReLU activation function. It consists of five basic types of layers: convolution layer, ReLU layer, pooling layer, flattening layer, and fully connected layer. It is a widely applied architecture in the field of image recognition, offering high accuracy under reasonable training time. In particular, its ability to detect edge arrangements is ideal for simple hand-drawn figures in our project. Also, the trained neural network provides fast image classification speed, which is ideal for situations such as note-taking and texting. To achieve this, we retrain a ConvNet based on the Google Doodle dataset.  Thus, we hope to observe the training and inference of ConvNet on a dataset of 2D vector images.
 
-Each image is 28x28 pixels, meaning we have 784 pixels per picture. We use the convulusion layer to reduce the data of each picture, pulling the 784 pixels down to around 50 data points. The convulusion layer will extract the important features from each image. Then the neural net layer will take the downsampled data and make a neural netowrk out of it. 
+We train the ConvNet with 12 classes, taking 50,000 samples from each class. Each image is 28x28 pixels, meaning we have 784 pixels per picture. We use the convulusion layer to reduce the data of each picture, pulling the 784 pixels down to around 50 data points. The convulusion layer will extract the important features from each image. Then the neural net layer will take the downsampled data and make a neural netowrk out of it. 
 
 Here, we show a snippet of our code that was used to create this ConvNet. This method is the most important method that shapes the neural net and shows all the steps that were taken to accomplish our goal.
 
 ![CodeSnippet](img/CodeSnippet.png)
+
+
+## Unsupervised Learning
+We also implemented the Kmeans algorithm with the same classes from the same dataset. Kmeans is known for its simplicity and runtime speed. In our implementation, we increased the number of clusters to see its effects on accuracy and running speed. In the end, we compared results from Kmeans unsupervised algorithm to that of the ConvNet supervised learning model. 
 
 ### Results
 
