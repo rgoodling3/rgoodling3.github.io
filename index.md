@@ -62,6 +62,11 @@ The confusion matrix lines up very well with the other two images, showing that 
 ![Ugly Bat](img\badbatimage.png)
 
 
+Comparing this to the K-Means results, we see some interesting trends.
+
+| [![10](img/10.png)] | [![144](img/144.png)] | [![784](img/784.png)]|
+
+
 ### Conclusion
 
 As seen in our results section, our CNN has done a great job in identifying doodles from the Google Doodle dataset. This makes us hopeful that the algorithm will work with most humans, as the Google Doodle dataset is a collection of human made data. In the future, we all think this would be a great program to implement for many every day uses. With our model working very well and the emoji dictionary growing seemingly everyday, we could solve a small problem to make lives easier.
