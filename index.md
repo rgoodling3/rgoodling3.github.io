@@ -3,7 +3,7 @@ Riley Goodling - rgoodling3@gatech.edu
 
 Haris Hussain - hussainharis04@gatech.edu
 
-Yu Xin - yuxin60@gatech.edu
+John Xin - yuxin60@gatech.edu
 
 Grace Armfield - karmfield3@gatech.edu
 
